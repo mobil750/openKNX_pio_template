@@ -1,9 +1,7 @@
-OpenKNX - LogicModule
+OpenKNX - PIO template
 ===
 
-Implementation of a knx logic module with up to 99 logic channels based on the [knx stack](https://github.com/thelsing/knx) from thelsing.
-
-Application description (including a feature overview) can be found [here](https://github.com/OpenKNX/OAM-LogicModule/blob/main/doc/Applikationsbeschreibung-Logik.md).
+Implementation of a knx module based on the [knx stack](https://github.com/thelsing/knx) from thelsing.
 
 It supports the SAMD and RP2040 version of the stack.
 

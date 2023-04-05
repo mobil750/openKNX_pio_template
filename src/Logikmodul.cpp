@@ -1,8 +1,9 @@
-// #ifdef LOGICMODULE
 #include "Helper.h"
-#include "Logic.h"
 #include "oknx.h"
+#include "HardwareDevices.h"
+#include "Logikmodul.h"
 
+/*
 struct sRuntimeInfo
 {
     unsigned long startupDelay;
@@ -35,12 +36,15 @@ bool startupDelay()
 {
     return !delayCheck(gRuntimeData.startupDelay, getDelayPattern(LOG_StartupDelayBase));
 }
+*/
 
-void appLoop()
+
+void application()
 {
     if (!knx.configured())
         return;
 
+/*
     // handle KNX stuff
     if (startupDelay())
         return;
@@ -50,6 +54,7 @@ void appLoop()
     ProcessHeartbeat();
     ProcessReadRequests();
     gLogic.loop();
+*/
 }
 
 void appSetup(bool iSaveSupported)
@@ -67,10 +72,11 @@ void appSetup(bool iSaveSupported)
 
     if (knx.configured())
     {
+/*
         gRuntimeData.startupDelay = millis();
         gRuntimeData.heartbeatDelay = 0;
         gLogic.setup(iSaveSupported);
         openknx.flashUserData()->readFlash();
+*/
     }
 }
-// #endif
