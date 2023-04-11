@@ -1,0 +1,5 @@
+{
+    "configuration": "flash=2097152_0,freq=133,opt=Small,rtti=Enabled,stackprotect=Disabled,exceptions=Disabled,dbgport=Serial,dbglvl=All,usbstack=picosdk,ipstack=ipv4only,uploadmethod=picotool",
+    "board": "rp2040:rp2040:rpipico",
+    "port": "COM8"
+}

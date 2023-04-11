@@ -1,8 +1,9 @@
-//#ifdef LOGICAPP
 #include <oknx.h>
 #include <HardwareDevices.h>
-#include <Logikmodul.h>
+#include <KNXprod.h>>
 #include "hardware.h"
+
+
 
 #pragma message "Pico Core Version: " ARDUINO_PICO_VERSION_STR 
 
@@ -65,4 +66,3 @@ void loop()
     if (knx.configured())
         application();
 }
-//#endif

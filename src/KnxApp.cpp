@@ -1,7 +1,7 @@
 #include "Helper.h"
 #include "oknx.h"
 #include "HardwareDevices.h"
-#include "Logikmodul.h"
+#include "KNXprod.h"
 
 /*
 struct sRuntimeInfo
@@ -60,6 +60,7 @@ void application()
 void appSetup(bool iSaveSupported)
 {
     // try to get rid of occasional I2C lock...
+    SERIAL_DEBUG.println("appSetup called...");
     // savePower();
     ledProg(true);
     ledInfo(true);
@@ -79,4 +80,5 @@ void appSetup(bool iSaveSupported)
         openknx.flashUserData()->readFlash();
 */
     }
+    SERIAL_DEBUG.println("appSetup done...");
 }
