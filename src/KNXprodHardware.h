@@ -242,7 +242,7 @@
 // #define KNX_I2C_SDA_PIN 20
 // #define KNX_I2C_SCL_PIN 21
 // Buzzer
-#define BUZZER_PIN 27
+//#define BUZZER_PIN 27
 // #define I2C_1WIRE_DEVICE_ADDRESSS 0x18  // Address of DS2484 1-Wire-Busmaster chip
 // #define I2C_EEPROM_DEVICE_ADDRESSS 0x50 // Address of 24LC256 eeprom chip
 // #define I2C_RGBLED_DEVICE_ADDRESS 0x60  // Address of PCA9632 RBGW-LED-Driver
